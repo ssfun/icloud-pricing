@@ -1,0 +1,15 @@
+{
+  "name": "icloud-pricing",
+  "version": "2.0.0",
+  "description": "Fetch and compare iCloud+ pricing across regions",
+  "scripts": {
+    "fetch": "node scripts/fetch-prices.js",
+    "test": "node scripts/fetch-prices.js --dry-run"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
