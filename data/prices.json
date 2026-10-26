@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T02:02:08.293Z",
+  "lastUpdated": "2026-10-26T01:58:15.685Z",
   "source": "Apple Support + ExchangeRate-API",
   "regions": [
     {
@@ -10,27 +10,27 @@
         {
           "Name": "50GB",
           "Price": 14.99,
-          "PriceInCNY": 2.02
+          "PriceInCNY": 2.01
         },
         {
           "Name": "200GB",
           "Price": 44.99,
-          "PriceInCNY": 6.08
+          "PriceInCNY": 6.04
         },
         {
           "Name": "2TB",
           "Price": 149.99,
-          "PriceInCNY": 20.26
+          "PriceInCNY": 20.12
         },
         {
           "Name": "6TB",
           "Price": 449.99,
-          "PriceInCNY": 60.77
+          "PriceInCNY": 60.37
         },
         {
           "Name": "12TB",
           "Price": 899.99,
-          "PriceInCNY": 121.54
+          "PriceInCNY": 120.75
         }
       ]
     },
@@ -42,27 +42,27 @@
         {
           "Name": "50GB",
           "Price": 24.99,
-          "PriceInCNY": 3.12
+          "PriceInCNY": 3
         },
         {
           "Name": "200GB",
           "Price": 74.99,
-          "PriceInCNY": 9.37
+          "PriceInCNY": 9
         },
         {
           "Name": "2TB",
           "Price": 249.99,
-          "PriceInCNY": 31.25
+          "PriceInCNY": 29.99
         },
         {
           "Name": "6TB",
           "Price": 749.99,
-          "PriceInCNY": 93.75
+          "PriceInCNY": 89.98
         },
         {
           "Name": "12TB",
           "Price": 1499.99,
-          "PriceInCNY": 187.5
+          "PriceInCNY": 179.96
         }
       ]
     },
@@ -74,27 +74,27 @@
         {
           "Name": "50GB",
           "Price": 900,
-          "PriceInCNY": 4.52
+          "PriceInCNY": 4.51
         },
         {
           "Name": "200GB",
           "Price": 2900,
-          "PriceInCNY": 14.57
+          "PriceInCNY": 14.52
         },
         {
           "Name": "2TB",
           "Price": 9900,
-          "PriceInCNY": 49.74
+          "PriceInCNY": 49.56
         },
         {
           "Name": "6TB",
           "Price": 29900,
-          "PriceInCNY": 150.22
+          "PriceInCNY": 149.69
         },
         {
           "Name": "12TB",
           "Price": 59900,
-          "PriceInCNY": 300.93
+          "PriceInCNY": 299.88
         }
       ]
     },
@@ -106,59 +106,27 @@
         {
           "Name": "50GB",
           "Price": 3.5,
-          "PriceInCNY": 4.62
+          "PriceInCNY": 4.68
         },
         {
           "Name": "200GB",
           "Price": 10.9,
-          "PriceInCNY": 14.38
+          "PriceInCNY": 14.56
         },
         {
           "Name": "2TB",
           "Price": 34.9,
-          "PriceInCNY": 46.05
+          "PriceInCNY": 46.63
         },
         {
           "Name": "6TB",
           "Price": 104.9,
-          "PriceInCNY": 138.42
+          "PriceInCNY": 140.15
         },
         {
           "Name": "12TB",
           "Price": 209.9,
-          "PriceInCNY": 276.97
-        }
-      ]
-    },
-    {
-      "CountryISO": "RU",
-      "Country": "Russia",
-      "Currency": "RUB",
-      "Plans": [
-        {
-          "Name": "50GB",
-          "Price": 59,
-          "PriceInCNY": 4.74
-        },
-        {
-          "Name": "200GB",
-          "Price": 149,
-          "PriceInCNY": 11.98
-        },
-        {
-          "Name": "2TB",
-          "Price": 599,
-          "PriceInCNY": 48.16
-        },
-        {
-          "Name": "6TB",
-          "Price": 1790,
-          "PriceInCNY": 143.91
-        },
-        {
-          "Name": "12TB",
-          "Price": 3590,
-          "PriceInCNY": 288.63
+          "PriceInCNY": 280.43
         }
       ]
     },
@@ -170,27 +138,59 @@
         {
           "Name": "50GB",
           "Price": 200,
-          "PriceInCNY": 4.83
+          "PriceInCNY": 4.82
         },
         {
           "Name": "200GB",
           "Price": 600,
-          "PriceInCNY": 14.5
+          "PriceInCNY": 14.47
         },
         {
           "Name": "2TB",
           "Price": 2000,
-          "PriceInCNY": 48.35
+          "PriceInCNY": 48.24
         },
         {
           "Name": "6TB",
           "Price": 6000,
-          "PriceInCNY": 145.04
+          "PriceInCNY": 144.72
         },
         {
           "Name": "12TB",
           "Price": 12000,
-          "PriceInCNY": 290.07
+          "PriceInCNY": 289.45
+        }
+      ]
+    },
+    {
+      "CountryISO": "RU",
+      "Country": "Russia",
+      "Currency": "RUB",
+      "Plans": [
+        {
+          "Name": "50GB",
+          "Price": 59,
+          "PriceInCNY": 4.89
+        },
+        {
+          "Name": "200GB",
+          "Price": 149,
+          "PriceInCNY": 12.34
+        },
+        {
+          "Name": "2TB",
+          "Price": 599,
+          "PriceInCNY": 49.6
+        },
+        {
+          "Name": "6TB",
+          "Price": 1790,
+          "PriceInCNY": 148.22
+        },
+        {
+          "Name": "12TB",
+          "Price": 3590,
+          "PriceInCNY": 297.28
         }
       ]
     },
@@ -222,7 +222,7 @@
         {
           "Name": "12TB",
           "Price": 1190000,
-          "PriceInCNY": 307.74
+          "PriceInCNY": 307.75
         }
       ]
     },
@@ -234,27 +234,27 @@
         {
           "Name": "50GB",
           "Price": 49,
-          "PriceInCNY": 5.2
+          "PriceInCNY": 5.14
         },
         {
           "Name": "200GB",
           "Price": 149,
-          "PriceInCNY": 15.8
+          "PriceInCNY": 15.63
         },
         {
           "Name": "2TB",
           "Price": 499,
-          "PriceInCNY": 52.93
+          "PriceInCNY": 52.34
         },
         {
           "Name": "6TB",
           "Price": 1490,
-          "PriceInCNY": 158.05
+          "PriceInCNY": 156.3
         },
         {
           "Name": "12TB",
           "Price": 2990,
-          "PriceInCNY": 317.16
+          "PriceInCNY": 313.65
         }
       ]
     },
@@ -266,27 +266,27 @@
         {
           "Name": "50GB",
           "Price": 75,
-          "PriceInCNY": 5.27
+          "PriceInCNY": 5.26
         },
         {
           "Name": "200GB",
           "Price": 219,
-          "PriceInCNY": 15.39
+          "PriceInCNY": 15.37
         },
         {
           "Name": "2TB",
           "Price": 749,
-          "PriceInCNY": 52.65
+          "PriceInCNY": 52.58
         },
         {
           "Name": "6TB",
           "Price": 2249,
-          "PriceInCNY": 158.08
+          "PriceInCNY": 157.87
         },
         {
           "Name": "12TB",
           "Price": 4499,
-          "PriceInCNY": 316.23
+          "PriceInCNY": 315.82
         }
       ]
     },
@@ -298,59 +298,27 @@
         {
           "Name": "50GB",
           "Price": 800,
-          "PriceInCNY": 5.45
+          "PriceInCNY": 5.4
         },
         {
           "Name": "200GB",
           "Price": 2500,
-          "PriceInCNY": 17.04
+          "PriceInCNY": 16.88
         },
         {
           "Name": "2TB",
           "Price": 7900,
-          "PriceInCNY": 53.84
+          "PriceInCNY": 53.33
         },
         {
           "Name": "6TB",
           "Price": 23900,
-          "PriceInCNY": 162.88
+          "PriceInCNY": 161.34
         },
         {
           "Name": "12TB",
           "Price": 47900,
-          "PriceInCNY": 326.43
-        }
-      ]
-    },
-    {
-      "CountryISO": "KR",
-      "Country": "South Korea",
-      "Currency": "KRW",
-      "Plans": [
-        {
-          "Name": "50GB",
-          "Price": 1100,
-          "PriceInCNY": 5.52
-        },
-        {
-          "Name": "200GB",
-          "Price": 3300,
-          "PriceInCNY": 16.55
-        },
-        {
-          "Name": "2TB",
-          "Price": 11000,
-          "PriceInCNY": 55.18
-        },
-        {
-          "Name": "6TB",
-          "Price": 33000,
-          "PriceInCNY": 165.54
-        },
-        {
-          "Name": "12TB",
-          "Price": 66000,
-          "PriceInCNY": 331.09
+          "PriceInCNY": 323.36
         }
       ]
     },
@@ -362,27 +330,59 @@
         {
           "Name": "50GB",
           "Price": 15000,
-          "PriceInCNY": 5.56
+          "PriceInCNY": 5.54
         },
         {
           "Name": "200GB",
           "Price": 45000,
-          "PriceInCNY": 16.68
+          "PriceInCNY": 16.62
         },
         {
           "Name": "2TB",
           "Price": 149000,
-          "PriceInCNY": 55.22
+          "PriceInCNY": 55.02
         },
         {
           "Name": "6TB",
           "Price": 449000,
-          "PriceInCNY": 166.39
+          "PriceInCNY": 165.8
         },
         {
           "Name": "12TB",
           "Price": 899000,
-          "PriceInCNY": 333.15
+          "PriceInCNY": 331.96
+        }
+      ]
+    },
+    {
+      "CountryISO": "KR",
+      "Country": "South Korea",
+      "Currency": "KRW",
+      "Plans": [
+        {
+          "Name": "50GB",
+          "Price": 1100,
+          "PriceInCNY": 5.55
+        },
+        {
+          "Name": "200GB",
+          "Price": 3300,
+          "PriceInCNY": 16.65
+        },
+        {
+          "Name": "2TB",
+          "Price": 11000,
+          "PriceInCNY": 55.5
+        },
+        {
+          "Name": "6TB",
+          "Price": 33000,
+          "PriceInCNY": 166.51
+        },
+        {
+          "Name": "12TB",
+          "Price": 66000,
+          "PriceInCNY": 333.02
         }
       ]
     },
@@ -394,27 +394,27 @@
         {
           "Name": "50GB",
           "Price": 2.9,
-          "PriceInCNY": 5.64
+          "PriceInCNY": 5.63
         },
         {
           "Name": "200GB",
           "Price": 9.9,
-          "PriceInCNY": 19.25
+          "PriceInCNY": 19.22
         },
         {
           "Name": "2TB",
           "Price": 34.9,
-          "PriceInCNY": 67.87
+          "PriceInCNY": 67.77
         },
         {
           "Name": "6TB",
           "Price": 99.9,
-          "PriceInCNY": 194.28
+          "PriceInCNY": 193.99
         },
         {
           "Name": "12TB",
           "Price": 199.9,
-          "PriceInCNY": 388.76
+          "PriceInCNY": 388.18
         }
       ]
     },
@@ -451,38 +451,6 @@
       ]
     },
     {
-      "CountryISO": "SE",
-      "Country": "Sweden",
-      "Currency": "SEK",
-      "Plans": [
-        {
-          "Name": "50GB",
-          "Price": 9,
-          "PriceInCNY": 6.07
-        },
-        {
-          "Name": "200GB",
-          "Price": 29,
-          "PriceInCNY": 19.56
-        },
-        {
-          "Name": "2TB",
-          "Price": 99,
-          "PriceInCNY": 66.77
-        },
-        {
-          "Name": "6TB",
-          "Price": 299,
-          "PriceInCNY": 201.64
-        },
-        {
-          "Name": "12TB",
-          "Price": 599,
-          "PriceInCNY": 403.96
-        }
-      ]
-    },
-    {
       "CountryISO": "ZA",
       "Country": "South Africa",
       "Currency": "ZAR",
@@ -490,59 +458,59 @@
         {
           "Name": "50GB",
           "Price": 14.99,
-          "PriceInCNY": 6.09
+          "PriceInCNY": 6.03
         },
         {
           "Name": "200GB",
           "Price": 44.99,
-          "PriceInCNY": 18.29
+          "PriceInCNY": 18.1
         },
         {
           "Name": "2TB",
           "Price": 149.99,
-          "PriceInCNY": 60.96
+          "PriceInCNY": 60.36
         },
         {
           "Name": "6TB",
           "Price": 449.99,
-          "PriceInCNY": 182.89
+          "PriceInCNY": 181.08
         },
         {
           "Name": "12TB",
           "Price": 899.99,
-          "PriceInCNY": 365.79
+          "PriceInCNY": 362.16
         }
       ]
     },
     {
-      "CountryISO": "CA",
-      "Country": "Canada",
-      "Currency": "CAD",
+      "CountryISO": "SE",
+      "Country": "Sweden",
+      "Currency": "SEK",
       "Plans": [
         {
           "Name": "50GB",
-          "Price": 1.29,
-          "PriceInCNY": 6.12
+          "Price": 9,
+          "PriceInCNY": 6.05
         },
         {
           "Name": "200GB",
-          "Price": 3.99,
-          "PriceInCNY": 18.93
+          "Price": 29,
+          "PriceInCNY": 19.51
         },
         {
           "Name": "2TB",
-          "Price": 12.99,
-          "PriceInCNY": 61.63
+          "Price": 99,
+          "PriceInCNY": 66.6
         },
         {
           "Name": "6TB",
-          "Price": 39.99,
-          "PriceInCNY": 189.74
+          "Price": 299,
+          "PriceInCNY": 201.14
         },
         {
           "Name": "12TB",
-          "Price": 79.99,
-          "PriceInCNY": 379.53
+          "Price": 599,
+          "PriceInCNY": 402.95
         }
       ]
     },
@@ -554,27 +522,27 @@
         {
           "Name": "50GB",
           "Price": 17,
-          "PriceInCNY": 6.16
+          "PriceInCNY": 6.07
         },
         {
           "Name": "200GB",
           "Price": 49,
-          "PriceInCNY": 17.76
+          "PriceInCNY": 17.49
         },
         {
           "Name": "2TB",
           "Price": 179,
-          "PriceInCNY": 64.87
+          "PriceInCNY": 63.87
         },
         {
           "Name": "6TB",
           "Price": 529,
-          "PriceInCNY": 191.71
+          "PriceInCNY": 188.77
         },
         {
           "Name": "12TB",
           "Price": 1049,
-          "PriceInCNY": 380.16
+          "PriceInCNY": 374.32
         }
       ]
     },
@@ -586,59 +554,59 @@
         {
           "Name": "50GB",
           "Price": 30,
-          "PriceInCNY": 6.18
+          "PriceInCNY": 6.15
         },
         {
           "Name": "200GB",
           "Price": 90,
-          "PriceInCNY": 18.55
+          "PriceInCNY": 18.44
         },
         {
           "Name": "2TB",
           "Price": 300,
-          "PriceInCNY": 61.85
+          "PriceInCNY": 61.47
         },
         {
           "Name": "6TB",
           "Price": 900,
-          "PriceInCNY": 185.55
+          "PriceInCNY": 184.42
         },
         {
           "Name": "12TB",
           "Price": 1800,
-          "PriceInCNY": 371.09
+          "PriceInCNY": 368.83
         }
       ]
     },
     {
-      "CountryISO": "JP",
-      "Country": "Japan",
-      "Currency": "JPY",
+      "CountryISO": "CA",
+      "Country": "Canada",
+      "Currency": "CAD",
       "Plans": [
         {
           "Name": "50GB",
-          "Price": 150,
-          "PriceInCNY": 6.35
+          "Price": 1.29,
+          "PriceInCNY": 6.16
         },
         {
           "Name": "200GB",
-          "Price": 450,
-          "PriceInCNY": 19.06
+          "Price": 3.99,
+          "PriceInCNY": 19.04
         },
         {
           "Name": "2TB",
-          "Price": 1500,
-          "PriceInCNY": 63.55
+          "Price": 12.99,
+          "PriceInCNY": 61.98
         },
         {
           "Name": "6TB",
-          "Price": 4500,
-          "PriceInCNY": 190.65
+          "Price": 39.99,
+          "PriceInCNY": 190.81
         },
         {
           "Name": "12TB",
-          "Price": 9000,
-          "PriceInCNY": 381.29
+          "Price": 79.99,
+          "PriceInCNY": 381.67
         }
       ]
     },
@@ -650,27 +618,59 @@
         {
           "Name": "50GB",
           "Price": 3.9,
-          "PriceInCNY": 6.39
+          "PriceInCNY": 6.37
         },
         {
           "Name": "200GB",
           "Price": 11.9,
-          "PriceInCNY": 19.51
+          "PriceInCNY": 19.44
         },
         {
           "Name": "2TB",
           "Price": 39.9,
-          "PriceInCNY": 65.42
+          "PriceInCNY": 65.17
         },
         {
           "Name": "6TB",
           "Price": 119.9,
-          "PriceInCNY": 196.6
+          "PriceInCNY": 195.83
         },
         {
           "Name": "12TB",
           "Price": 239.9,
-          "PriceInCNY": 393.37
+          "PriceInCNY": 391.82
+        }
+      ]
+    },
+    {
+      "CountryISO": "JP",
+      "Country": "Japan",
+      "Currency": "JPY",
+      "Plans": [
+        {
+          "Name": "50GB",
+          "Price": 150,
+          "PriceInCNY": 6.39
+        },
+        {
+          "Name": "200GB",
+          "Price": 450,
+          "PriceInCNY": 19.16
+        },
+        {
+          "Name": "2TB",
+          "Price": 1500,
+          "PriceInCNY": 63.87
+        },
+        {
+          "Name": "6TB",
+          "Price": 4500,
+          "PriceInCNY": 191.62
+        },
+        {
+          "Name": "12TB",
+          "Price": 9000,
+          "PriceInCNY": 383.25
         }
       ]
     },
@@ -682,27 +682,27 @@
         {
           "Name": "50GB",
           "Price": 1.69,
-          "PriceInCNY": 6.39
+          "PriceInCNY": 6.45
         },
         {
           "Name": "200GB",
           "Price": 4.99,
-          "PriceInCNY": 18.86
+          "PriceInCNY": 19.05
         },
         {
           "Name": "2TB",
           "Price": 16.99,
-          "PriceInCNY": 64.22
+          "PriceInCNY": 64.85
         },
         {
           "Name": "6TB",
           "Price": 49.99,
-          "PriceInCNY": 188.95
+          "PriceInCNY": 190.82
         },
         {
           "Name": "12TB",
           "Price": 99.99,
-          "PriceInCNY": 377.93
+          "PriceInCNY": 381.68
         }
       ]
     },
@@ -714,27 +714,27 @@
         {
           "Name": "50GB",
           "Price": 0.99,
-          "PriceInCNY": 6.62
+          "PriceInCNY": 6.61
         },
         {
           "Name": "200GB",
           "Price": 2.99,
-          "PriceInCNY": 20
+          "PriceInCNY": 19.97
         },
         {
           "Name": "2TB",
           "Price": 9.99,
-          "PriceInCNY": 66.83
+          "PriceInCNY": 66.73
         },
         {
           "Name": "6TB",
           "Price": 29.99,
-          "PriceInCNY": 200.63
+          "PriceInCNY": 200.33
         },
         {
           "Name": "12TB",
           "Price": 59.99,
-          "PriceInCNY": 401.33
+          "PriceInCNY": 400.73
         }
       ]
     },
@@ -746,27 +746,59 @@
         {
           "Name": "50GB",
           "Price": 1.28,
-          "PriceInCNY": 6.69
+          "PriceInCNY": 6.68
         },
         {
           "Name": "200GB",
           "Price": 3.98,
-          "PriceInCNY": 20.8
+          "PriceInCNY": 20.77
         },
         {
           "Name": "2TB",
           "Price": 12.98,
-          "PriceInCNY": 67.84
+          "PriceInCNY": 67.74
         },
         {
           "Name": "6TB",
           "Price": 38.98,
-          "PriceInCNY": 203.73
+          "PriceInCNY": 203.43
         },
         {
           "Name": "12TB",
           "Price": 78.98,
-          "PriceInCNY": 412.79
+          "PriceInCNY": 412.18
+        }
+      ]
+    },
+    {
+      "CountryISO": "PL",
+      "Country": "Poland",
+      "Currency": "PLN",
+      "Plans": [
+        {
+          "Name": "50GB",
+          "Price": 3.99,
+          "PriceInCNY": 6.78
+        },
+        {
+          "Name": "200GB",
+          "Price": 11.99,
+          "PriceInCNY": 20.38
+        },
+        {
+          "Name": "2TB",
+          "Price": 39.99,
+          "PriceInCNY": 67.97
+        },
+        {
+          "Name": "6TB",
+          "Price": 119.99,
+          "PriceInCNY": 203.95
+        },
+        {
+          "Name": "12TB",
+          "Price": 239.99,
+          "PriceInCNY": 407.92
         }
       ]
     },
@@ -788,81 +820,17 @@
         {
           "Name": "2TB",
           "Price": 78,
-          "PriceInCNY": 66.47
+          "PriceInCNY": 66.46
         },
         {
           "Name": "6TB",
           "Price": 233,
-          "PriceInCNY": 198.57
+          "PriceInCNY": 198.53
         },
         {
           "Name": "12TB",
           "Price": 468,
-          "PriceInCNY": 398.84
-        }
-      ]
-    },
-    {
-      "CountryISO": "PL",
-      "Country": "Poland",
-      "Currency": "PLN",
-      "Plans": [
-        {
-          "Name": "50GB",
-          "Price": 3.99,
-          "PriceInCNY": 6.86
-        },
-        {
-          "Name": "200GB",
-          "Price": 11.99,
-          "PriceInCNY": 20.62
-        },
-        {
-          "Name": "2TB",
-          "Price": 39.99,
-          "PriceInCNY": 68.77
-        },
-        {
-          "Name": "6TB",
-          "Price": 119.99,
-          "PriceInCNY": 206.36
-        },
-        {
-          "Name": "12TB",
-          "Price": 239.99,
-          "PriceInCNY": 412.73
-        }
-      ]
-    },
-    {
-      "CountryISO": "AU",
-      "Country": "Australia",
-      "Currency": "AUD",
-      "Plans": [
-        {
-          "Name": "50GB",
-          "Price": 1.49,
-          "PriceInCNY": 6.92
-        },
-        {
-          "Name": "200GB",
-          "Price": 4.49,
-          "PriceInCNY": 20.86
-        },
-        {
-          "Name": "2TB",
-          "Price": 14.99,
-          "PriceInCNY": 69.64
-        },
-        {
-          "Name": "6TB",
-          "Price": 44.99,
-          "PriceInCNY": 209.02
-        },
-        {
-          "Name": "12TB",
-          "Price": 89.99,
-          "PriceInCNY": 418.08
+          "PriceInCNY": 398.76
         }
       ]
     },
@@ -874,27 +842,27 @@
         {
           "Name": "50GB",
           "Price": 35,
-          "PriceInCNY": 7.01
+          "PriceInCNY": 6.93
         },
         {
           "Name": "200GB",
           "Price": 99,
-          "PriceInCNY": 19.82
+          "PriceInCNY": 19.59
         },
         {
           "Name": "2TB",
           "Price": 349,
-          "PriceInCNY": 69.86
+          "PriceInCNY": 69.06
         },
         {
           "Name": "6TB",
           "Price": 1049,
-          "PriceInCNY": 209.99
+          "PriceInCNY": 207.56
         },
         {
           "Name": "12TB",
           "Price": 2099,
-          "PriceInCNY": 420.18
+          "PriceInCNY": 415.32
         }
       ]
     },
@@ -906,27 +874,59 @@
         {
           "Name": "50GB",
           "Price": 7,
-          "PriceInCNY": 7.04
+          "PriceInCNY": 7
         },
         {
           "Name": "200GB",
           "Price": 19,
-          "PriceInCNY": 19.11
+          "PriceInCNY": 19
         },
         {
           "Name": "2TB",
           "Price": 69,
-          "PriceInCNY": 69.42
+          "PriceInCNY": 69
         },
         {
           "Name": "6TB",
           "Price": 199,
-          "PriceInCNY": 200.2
+          "PriceInCNY": 199
         },
         {
           "Name": "12TB",
           "Price": 399,
-          "PriceInCNY": 401.4
+          "PriceInCNY": 399
+        }
+      ]
+    },
+    {
+      "CountryISO": "AU",
+      "Country": "Australia",
+      "Currency": "AUD",
+      "Plans": [
+        {
+          "Name": "50GB",
+          "Price": 1.49,
+          "PriceInCNY": 7.01
+        },
+        {
+          "Name": "200GB",
+          "Price": 4.49,
+          "PriceInCNY": 21.12
+        },
+        {
+          "Name": "2TB",
+          "Price": 14.99,
+          "PriceInCNY": 70.52
+        },
+        {
+          "Name": "6TB",
+          "Price": 44.99,
+          "PriceInCNY": 211.64
+        },
+        {
+          "Name": "12TB",
+          "Price": 89.99,
+          "PriceInCNY": 423.33
         }
       ]
     },
@@ -938,27 +938,27 @@
         {
           "Name": "50GB",
           "Price": 3.99,
-          "PriceInCNY": 7.12
+          "PriceInCNY": 7.11
         },
         {
           "Name": "200GB",
           "Price": 10.99,
-          "PriceInCNY": 19.61
+          "PriceInCNY": 19.58
         },
         {
           "Name": "2TB",
           "Price": 36.99,
-          "PriceInCNY": 65.99
+          "PriceInCNY": 65.89
         },
         {
           "Name": "6TB",
           "Price": 109.99,
-          "PriceInCNY": 196.22
+          "PriceInCNY": 195.93
         },
         {
           "Name": "12TB",
           "Price": 219.99,
-          "PriceInCNY": 392.46
+          "PriceInCNY": 391.88
         }
       ]
     },
@@ -970,7 +970,7 @@
         {
           "Name": "50GB",
           "Price": 3400,
-          "PriceInCNY": 7.17
+          "PriceInCNY": 7.16
         },
         {
           "Name": "200GB",
@@ -980,17 +980,17 @@
         {
           "Name": "2TB",
           "Price": 34900,
-          "PriceInCNY": 73.55
+          "PriceInCNY": 73.53
         },
         {
           "Name": "6TB",
           "Price": 104900,
-          "PriceInCNY": 221.07
+          "PriceInCNY": 221.02
         },
         {
           "Name": "12TB",
           "Price": 209900,
-          "PriceInCNY": 442.35
+          "PriceInCNY": 442.24
         }
       ]
     },
@@ -1002,27 +1002,27 @@
         {
           "Name": "50GB",
           "Price": 3.99,
-          "PriceInCNY": 7.27
+          "PriceInCNY": 7.26
         },
         {
           "Name": "200GB",
           "Price": 10.99,
-          "PriceInCNY": 20.03
+          "PriceInCNY": 20
         },
         {
           "Name": "2TB",
           "Price": 36.99,
-          "PriceInCNY": 67.43
+          "PriceInCNY": 67.33
         },
         {
           "Name": "6TB",
           "Price": 109.99,
-          "PriceInCNY": 200.5
+          "PriceInCNY": 200.2
         },
         {
           "Name": "12TB",
           "Price": 219.99,
-          "PriceInCNY": 401.02
+          "PriceInCNY": 400.42
         }
       ]
     },
@@ -1034,27 +1034,27 @@
         {
           "Name": "50GB",
           "Price": 0.99,
-          "PriceInCNY": 7.43
+          "PriceInCNY": 7.41
         },
         {
           "Name": "200GB",
           "Price": 2.99,
-          "PriceInCNY": 22.45
+          "PriceInCNY": 22.39
         },
         {
           "Name": "2TB",
           "Price": 9.99,
-          "PriceInCNY": 75.01
+          "PriceInCNY": 74.81
         },
         {
           "Name": "6TB",
           "Price": 29.99,
-          "PriceInCNY": 225.18
+          "PriceInCNY": 224.59
         },
         {
           "Name": "12TB",
           "Price": 59.99,
-          "PriceInCNY": 450.43
+          "PriceInCNY": 449.25
         }
       ]
     },
@@ -1066,27 +1066,27 @@
         {
           "Name": "50GB",
           "Price": 0.99,
-          "PriceInCNY": 7.43
+          "PriceInCNY": 7.41
         },
         {
           "Name": "200GB",
           "Price": 2.99,
-          "PriceInCNY": 22.45
+          "PriceInCNY": 22.39
         },
         {
           "Name": "2TB",
           "Price": 9.99,
-          "PriceInCNY": 75.01
+          "PriceInCNY": 74.81
         },
         {
           "Name": "6TB",
           "Price": 29.99,
-          "PriceInCNY": 225.18
+          "PriceInCNY": 224.59
         },
         {
           "Name": "12TB",
           "Price": 59.99,
-          "PriceInCNY": 450.43
+          "PriceInCNY": 449.25
         }
       ]
     },
@@ -1098,27 +1098,27 @@
         {
           "Name": "50GB",
           "Price": 1,
-          "PriceInCNY": 8.12
+          "PriceInCNY": 8.1
         },
         {
           "Name": "200GB",
           "Price": 3,
-          "PriceInCNY": 24.36
+          "PriceInCNY": 24.29
         },
         {
           "Name": "2TB",
           "Price": 10,
-          "PriceInCNY": 81.19
+          "PriceInCNY": 80.97
         },
         {
           "Name": "6TB",
           "Price": 30,
-          "PriceInCNY": 243.57
+          "PriceInCNY": 242.91
         },
         {
           "Name": "12TB",
           "Price": 60,
-          "PriceInCNY": 487.14
+          "PriceInCNY": 485.82
         }
       ]
     },
@@ -1130,27 +1130,27 @@
         {
           "Name": "50GB",
           "Price": 3.9,
-          "PriceInCNY": 8.39
+          "PriceInCNY": 8.38
         },
         {
           "Name": "200GB",
           "Price": 10.9,
-          "PriceInCNY": 23.45
+          "PriceInCNY": 23.41
         },
         {
           "Name": "2TB",
           "Price": 34.9,
-          "PriceInCNY": 75.07
+          "PriceInCNY": 74.96
         },
         {
           "Name": "6TB",
           "Price": 109.9,
-          "PriceInCNY": 236.41
+          "PriceInCNY": 236.06
         },
         {
           "Name": "12TB",
           "Price": 219.9,
-          "PriceInCNY": 473.03
+          "PriceInCNY": 472.33
         }
       ]
     },
@@ -1162,27 +1162,27 @@
         {
           "Name": "50GB",
           "Price": 12,
-          "PriceInCNY": 8.5
+          "PriceInCNY": 8.6
         },
         {
           "Name": "200GB",
           "Price": 35,
-          "PriceInCNY": 24.8
+          "PriceInCNY": 25.09
         },
         {
           "Name": "2TB",
           "Price": 119,
-          "PriceInCNY": 84.33
+          "PriceInCNY": 85.29
         },
         {
           "Name": "6TB",
           "Price": 355,
-          "PriceInCNY": 251.58
+          "PriceInCNY": 254.44
         },
         {
           "Name": "12TB",
           "Price": 709,
-          "PriceInCNY": 502.46
+          "PriceInCNY": 508.17
         }
       ]
     },
@@ -1194,27 +1194,27 @@
         {
           "Name": "50GB",
           "Price": 0.99,
-          "PriceInCNY": 8.83
+          "PriceInCNY": 8.84
         },
         {
           "Name": "200GB",
           "Price": 2.99,
-          "PriceInCNY": 26.67
+          "PriceInCNY": 26.7
         },
         {
           "Name": "2TB",
           "Price": 8.99,
-          "PriceInCNY": 80.19
+          "PriceInCNY": 80.29
         },
         {
           "Name": "6TB",
           "Price": 26.99,
-          "PriceInCNY": 240.75
+          "PriceInCNY": 241.03
         },
         {
           "Name": "12TB",
           "Price": 54.99,
-          "PriceInCNY": 490.51
+          "PriceInCNY": 491.09
         }
       ]
     }
