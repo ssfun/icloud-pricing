@@ -11,8 +11,8 @@ ObjC.import('Foundation');
  * 配置
  */
 const CONFIG = {
-  // 数据源 URL (部署到 GitHub Pages 后替换)
-  dataURL: 'https://raw.githubusercontent.com/YOUR_USERNAME/icloud-pricing/main/data/prices.json',
+  // 仓库发布的价格快照
+  dataURL: 'https://raw.githubusercontent.com/ssfun/icloud-pricing/main/data/prices.json',
   // 本地数据备份路径
   localDataPath: './data/prices.json',
   // 缓存有效期 (毫秒)
@@ -129,20 +129,20 @@ function getFileMtime(path) {
 function fetchRemote(url) {
   var task = $.NSTask.alloc.init;
   task.launchPath = '/usr/bin/curl';
-  task.arguments = $(['-s', '-m', String(CONFIG.timeout), '-L', url]);
+  task.arguments = $(['-fsSL', '-m', String(CONFIG.timeout), url]);
 
   var pipe = $.NSPipe.pipe;
   task.standardOutput = pipe;
-  task.standardError = $.NSPipe.pipe;
+  task.standardError = $.NSFileHandle.fileHandleWithNullDevice;
 
   task.launch;
+  var data = pipe.fileHandleForReading.readDataToEndOfFile;
   task.waitUntilExit;
 
   if (task.terminationStatus !== 0) {
     return null;
   }
 
-  var data = pipe.fileHandleForReading.readDataToEndOfFile;
   var output = $.NSString.alloc.initWithDataEncoding(data, $.NSUTF8StringEncoding);
   return output ? output.js : null;
 }
@@ -150,62 +150,66 @@ function fetchRemote(url) {
 /**
  * 获取价格数据 (带缓存)
  */
+function parseSnapshot(raw) {
+  if (!raw) return null;
+  try {
+    var data = JSON.parse(raw);
+    if (!data || !Array.isArray(data.regions) || !data.regions.length ||
+        !Number.isFinite(Date.parse(data.lastUpdated))) return null;
+    var ids = Object.create(null);
+    var valid = data.regions.every(function(r) {
+      if (!r || !/^[A-Z]{2}$/.test(r.CountryISO) || ids[r.CountryISO] ||
+          typeof r.Country !== 'string' || !r.Country ||
+          !/^[A-Z]{3}$/.test(r.Currency) || !Array.isArray(r.Plans) ||
+          r.Plans.length !== PLAN_TYPES.length) return false;
+      ids[r.CountryISO] = true;
+      return PLAN_TYPES.every(function(name) {
+        return r.Plans.some(function(p) {
+          return p && p.Name === name.toUpperCase() && Number.isFinite(p.Price) &&
+            p.Price > 0 && Number.isFinite(p.PriceInCNY) && p.PriceInCNY > 0;
+        });
+      });
+    });
+    return valid ? data : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function verifiedAt(data) {
+  return data && Number.isFinite(Date.parse(data.priceVerifiedAt)) ? Date.parse(data.priceVerifiedAt) : 0;
+}
+
+function compareSnapshots(a, b) {
+  return verifiedAt(a) - verifiedAt(b) || Date.parse(a.lastUpdated) - Date.parse(b.lastUpdated);
+}
+
 function getPriceData() {
   var cacheDir = getCacheDir();
   var cachePath = cacheDir + '/prices.json';
-
-  ensureDir(cacheDir);
-
-  // 检查缓存
-  var now = Date.now();
+  var cached = parseSnapshot(readFile(cachePath));
   var mtime = getFileMtime(cachePath);
-  if (mtime && (now - mtime) < CONFIG.cacheTTL) {
-    var cached = readFile(cachePath);
-    if (cached) {
+  if (cached && verifiedAt(cached) && mtime && Date.now() - mtime < CONFIG.cacheTTL) return cached;
+
+  var local = parseSnapshot(readFile(getWorkflowDir() + '/' + CONFIG.localDataPath));
+  var fallback = cached && local ? (compareSnapshots(cached, local) >= 0 ? cached : local) : cached || local;
+  var remote = null;
+  try {
+    remote = parseSnapshot(fetchRemote(CONFIG.dataURL));
+  } catch (e) {
+    // 网络或进程错误不阻断离线查询。
+  }
+  if (remote && (!fallback || compareSnapshots(remote, fallback) >= 0)) {
+    // Cache only validated remote snapshots; the bundle never resets refresh TTL.
+    if (verifiedAt(remote)) {
       try {
-        return JSON.parse(cached);
-      } catch (e) {
-        // 缓存损坏，继续获取新数据
-      }
+        ensureDir(cacheDir);
+        writeFile(cachePath, JSON.stringify(remote));
+      } catch (e) {}
     }
+    return remote;
   }
-
-  // 优先尝试读取本地数据文件 (workflow 自带的数据)
-  var workflowDir = getWorkflowDir();
-  var localPath = workflowDir + '/data/prices.json';
-  var local = readFile(localPath);
-  if (local) {
-    try {
-      var localData = JSON.parse(local);
-      // 将本地数据写入缓存
-      writeFile(cachePath, local);
-      return localData;
-    } catch (e) {
-      // 解析失败，继续尝试远程
-    }
-  }
-
-  // 尝试从远程获取
-  var remote = fetchRemote(CONFIG.dataURL);
-  if (remote) {
-    try {
-      var data = JSON.parse(remote);
-      writeFile(cachePath, remote);
-      return data;
-    } catch (e) {
-      // 解析失败
-    }
-  }
-
-  // 尝试读取过期缓存
-  var expiredCache = readFile(cachePath);
-  if (expiredCache) {
-    try {
-      return JSON.parse(expiredCache);
-    } catch (e) {}
-  }
-
-  return null;
+  return fallback;
 }
 
 /**
@@ -215,7 +219,8 @@ function filterRegions(regions, query) {
   if (!query) return regions;
   query = query.toUpperCase();
   return regions.filter(function(r) {
-    return r.CountryISO.toUpperCase().indexOf(query) !== -1 ||
+    return (r.CountryISO === 'TR' && query === 'TURKEY') ||
+           r.CountryISO.toUpperCase().indexOf(query) !== -1 ||
            r.Country.toUpperCase().indexOf(query) !== -1;
   });
 }
@@ -387,11 +392,13 @@ function run(argv) {
 
   // 添加更新时间信息
   if (data.lastUpdated) {
-    var updateDate = new Date(data.lastUpdated);
+    var verified = verifiedAt(data);
+    var updateDate = new Date(verified || data.lastUpdated);
     var dateStr = updateDate.toLocaleDateString('zh-CN');
     items.push({
-      title: '数据更新时间: ' + dateStr,
-      subtitle: '按 ⌥ + Enter 查看 Apple 官方页面',
+      title: (verified ? 'Apple 价格核对日期: ' : '旧快照（价格未经核对）: ') + dateStr,
+      subtitle: (verified && data.fxUpdatedAt ? '汇率日期: ' + new Date(data.fxUpdatedAt).toLocaleDateString('zh-CN') + ' | ' : '') +
+        '按 ⌥ + Enter 查看 Apple 官方页面',
       valid: false,
       icon: { path: 'icon.png' },
       mods: {

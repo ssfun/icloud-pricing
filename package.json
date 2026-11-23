@@ -4,12 +4,12 @@
   "description": "Fetch and compare iCloud+ pricing across regions",
   "scripts": {
     "fetch": "node scripts/fetch-prices.js",
-    "test": "node scripts/fetch-prices.js --dry-run"
+    "test": "node --test"
   },
   "dependencies": {
     "cheerio": "^1.0.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20.18.1"
   }
 }
